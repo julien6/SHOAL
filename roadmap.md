@@ -40,7 +40,7 @@
 | Paper deadline | {{expected ≈ early Oct 2027 (AAMAS 2027's was 1 Oct 2026)}} |
 | Conference | {{May 2028, location TBA (IFAAMAS bid call prefers the Americas)}} |
 | Author response phase | {{dates}} |
-| Authors and roles | Julien Soulé – lead / supervision; {{M2 student – state of the art}}; {{M1 student – implementation}}; {{co-supervisors}} |
+| Authors and roles | REDACTED – lead / supervision; {{M2 student – state of the art}}; {{M1 student – implementation}}; {{co-supervisors}} |
 | Repository (private) | {{link}} |
 | Anonymized repository | {{Anonymous GitHub link}} |
 | Initial informal document | `projet-1-reformule.docx` (project description, 13 references) |
