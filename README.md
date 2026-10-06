@@ -5,7 +5,8 @@ A pure-JAX multi-agent fishery for testing how MARL social mechanisms behave whe
 SES structure: **H** actor heterogeneity (capacity + need), **Z** access zones, **T** a global critical
 depensation threshold. All three off = Harvest-like *degenerate* configuration.
 
-The roadmap is `roadmap.md`; its status after this PoC is in `docs/roadmap_status.md`.
+The pre-registered predictions (Annex L, with observed values appended) are in `docs/expected_results.md`;
+the full translation ledger is in `docs/ledger.md`.
 
 ## Layout
 | Path | Content |
@@ -19,7 +20,7 @@ The roadmap is `roadmap.md`; its status after this PoC is in `docs/roadmap_statu
 | `shoal/stats.py` | IQM, bootstrap CI, Mann–Whitney + Holm, Kendall τ, two-way ANOVA |
 | `tests/test_env.py` | invariant tests (stock balance, threshold basin, zones, punishment, determinism, depletion) |
 | `experiments/` | `pilot.py`, `run_protocol.py`, `run_probes.py`, `analyze.py`, `figure1.py` |
-| `docs/` | ledger (C1), ODD+D, literature/novelty/gaps, decision log, Annex L (frozen), results, paper draft, mock review |
+| `docs/` | `ledger.md` (full translation ledger, C1), `expected_results.md` (pre-registered predictions, Annex L) |
 | `results/`, `figures/` | raw per-cell JSON + trained nets, summary tables, figures |
 
 ## Reproduce (CPU only, ~4 h on a 14-core laptop)
