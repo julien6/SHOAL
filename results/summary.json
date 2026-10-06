@@ -1,0 +1,320 @@
+{
+ "planner_bound_violations": [],
+ "Cl2": {
+  "ippo_frac_seeds_below_xmsy": 1.0,
+  "tests": {
+   "ia_vs_ippo_final_stock": {
+    "p_holm": 0.05465097838818579,
+    "diff_mean": -0.011811039596796039
+   },
+   "svo_vs_ippo_final_stock": {
+    "p_holm": 0.0014613743288764002,
+    "diff_mean": 0.038886437565088264
+   },
+   "punish_vs_ippo_final_stock": {
+    "p_holm": 1.0,
+    "diff_mean": 0.0008327163755893624
+   },
+   "mappo_vs_ippo_final_stock": {
+    "p_holm": 0.22577284812139503,
+    "diff_mean": -0.008098204433917996
+   },
+   "ia_vs_ippo_equality": {
+    "p_holm": 1.0,
+    "diff_mean": 0.00018786191940312058
+   },
+   "svo_vs_ippo_equality": {
+    "p_holm": 0.0014613743288764002,
+    "diff_mean": -0.04841791391372685
+   },
+   "punish_vs_ippo_equality": {
+    "p_holm": 1.0,
+    "diff_mean": 0.0003532707691192849
+   },
+   "mappo_vs_ippo_equality": {
+    "p_holm": 1.0,
+    "diff_mean": 0.0001112818717956543
+   }
+  },
+  "verdict": "partially supported"
+ },
+ "Cl3": {
+  "final_stock": {
+   "tau_vs_degenerate": {
+    "+H": -0.39999999999999997,
+    "+Z": -0.19999999999999998,
+    "+T": 0.39999999999999997,
+    "full": 0.19999999999999998
+   },
+   "reversals_deg_vs_full": [
+    {
+     "pair": "ippo-ia",
+     "p_deg": 0.05465097838818579,
+     "p_full": 0.017617759539976626,
+     "both_sig": false
+    },
+    {
+     "pair": "mappo-ia",
+     "p_deg": 0.48264318603436007,
+     "p_full": 0.0024612812790522974,
+     "both_sig": false
+    },
+    {
+     "pair": "ia-punish",
+     "p_deg": 0.05465097838818579,
+     "p_full": 0.0069168502184648985,
+     "both_sig": false
+    },
+    {
+     "pair": "ia-svo",
+     "p_deg": 0.0018267179110955,
+     "p_full": 0.12080219258183836,
+     "both_sig": false
+    }
+   ]
+  },
+  "norm_harvest": {
+   "tau_vs_degenerate": {
+    "+H": -0.6,
+    "+Z": 0.19999999999999998,
+    "+T": -0.39999999999999997,
+    "full": 0.39999999999999997
+   },
+   "reversals_deg_vs_full": [
+    {
+     "pair": "mappo-punish",
+     "p_deg": 0.4848980120516665,
+     "p_full": 0.04370734205687796,
+     "both_sig": false
+    }
+   ]
+  },
+  "equality_need": {
+   "tau_vs_degenerate": {
+    "+H": 0.0,
+    "+Z": 0.19999999999999998,
+    "+T": 0.0,
+    "full": 0.6
+   },
+   "reversals_deg_vs_full": [
+    {
+     "pair": "mappo-ia",
+     "p_deg": 1.0,
+     "p_full": 0.04636286835467768,
+     "both_sig": false
+    }
+   ]
+  },
+  "anova_final_stock": {
+   "A": {
+    "F": 7576.580385951349,
+    "p": 1.1480408399586551e-88
+   },
+   "B": {
+    "F": 45.133154646056916,
+    "p": 9.611795340112543e-21
+   },
+   "AxB": {
+    "F": 45.35491721795222,
+    "p": 8.308318789830365e-21
+   }
+  },
+  "anova_equality": {
+   "A": {
+    "F": 82279.23612633669,
+    "p": 4.5220033803636803e-135
+   },
+   "B": {
+    "F": 69.28939284142729,
+    "p": 1.1647643035215764e-26
+   },
+   "AxB": {
+    "F": 88.64881035462597,
+    "p": 2.235692563328519e-30
+   }
+  },
+  "anova_norm_harvest": {
+   "A": {
+    "F": 22355.32297388955,
+    "p": 1.1606871604299436e-109
+   },
+   "B": {
+    "F": 33.23422508378117,
+    "p": 5.2154458148779435e-17
+   },
+   "AxB": {
+    "F": 23.217492665876026,
+    "p": 3.32698055655257e-13
+   }
+  },
+  "verdict": "partially supported"
+ },
+ "Cl4": {
+  "full-H/ippo/equality": {
+   "diff": 0.31997444033622746,
+   "p_holm": 0.0012787025377668502,
+   "predicted_sign": 1,
+   "ok": true
+  },
+  "full-H/ia/equality": {
+   "diff": 0.3214588224887849,
+   "p_holm": 0.0012787025377668502,
+   "predicted_sign": 1,
+   "ok": true
+  },
+  "full-H/punish/equality": {
+   "diff": 0.31719828248023996,
+   "p_holm": 0.0012787025377668502,
+   "predicted_sign": 1,
+   "ok": true
+  },
+  "full-T/ippo/collapse": {
+   "diff": 0.0,
+   "p_holm": 1.0,
+   "predicted_sign": -1,
+   "ok": false
+  },
+  "full-T/ia/collapse": {
+   "diff": 0.0,
+   "p_holm": 1.0,
+   "predicted_sign": -1,
+   "ok": false
+  },
+  "full-T/punish/collapse": {
+   "diff": 0.0,
+   "p_holm": 1.0,
+   "predicted_sign": -1,
+   "ok": false
+  },
+  "full-Z/punish/punish_rate": {
+   "diff": -3.4722223062999553e-06,
+   "p_holm": 1.0,
+   "predicted_sign": 1,
+   "ok": false
+  },
+  "per_feature": {
+   "full-H": true,
+   "full-T": false,
+   "full-Z": false
+  },
+  "verdict": "partially supported"
+ },
+ "H1c_punish_rate_Z_vs_deg": {
+  "deg": 2.083333383779973e-05,
+  "plusZ": 3.4722223062999545e-06,
+  "p": 0.05934643879191985
+ },
+ "H1a_IA_equality_gain": {
+  "degenerate": {
+   "raw": 0.00018786191940312058,
+   "need": 0.00018786787986757592
+  },
+  "+H": {
+   "raw": -0.025219243764877386,
+   "need": -0.032417798042297385
+  },
+  "+Z": {
+   "raw": -0.001121431589126587,
+   "need": -0.0011214375495910422
+  },
+  "+T": {
+   "raw": -0.001958519220352173,
+   "need": -0.0019585132598877175
+  },
+  "full": {
+   "raw": -0.0027583479881286843,
+   "need": -0.006802684068679787
+  }
+ },
+ "threshold_sweep": {
+  "0.03": {
+   "collapse": 0.0,
+   "final_stock": 0.06760554425418377
+  },
+  "0.05": {
+   "collapse": 0.0,
+   "final_stock": 0.07136900685727596
+  },
+  "0.07": {
+   "collapse": 0.525,
+   "final_stock": 0.06918640099465848
+  },
+  "0.1": {
+   "collapse": 1.0,
+   "final_stock": 0.061387233436107635
+  },
+  "0.2": {
+   "collapse": 1.0,
+   "final_stock": 0.022013630345463754
+  }
+ },
+ "Cl5": {
+  "degenerate": {
+   "conditionality": {
+    "ippo": {
+     "mean": -0.11821527481079101,
+     "iqm": -0.12210647265116374
+    },
+    "mappo": {
+     "mean": -0.11295138895511628,
+     "iqm": -0.11016203959782918
+    },
+    "ia": {
+     "mean": -0.11547915935516358,
+     "iqm": -0.11437499523162842
+    },
+    "punish": {
+     "mean": -0.12293749749660492,
+     "iqm": -0.1217824121316274
+    },
+    "svo": {
+     "mean": -0.12868750095367432,
+     "iqm": -0.1278703808784485
+    }
+   },
+   "conditionality_sig_pairs": [],
+   "persistence_dstock": {
+    "ippo": -0.0035790421068668367,
+    "ia": 0.005432017147541046,
+    "punish": -0.008013594150543212,
+    "svo": -0.0446993462741375
+   },
+   "persistence_sig_vs_ippo": [
+    "svo (p=0.00132)"
+   ]
+  },
+  "full": {
+   "conditionality": {
+    "ippo": {
+     "mean": -0.10227777659893036,
+     "iqm": -0.1037500003973643
+    },
+    "mappo": {
+     "mean": -0.09852777868509292,
+     "iqm": -0.09774305919806163
+    },
+    "ia": {
+     "mean": -0.10556944459676743,
+     "iqm": -0.10384259869654973
+    },
+    "punish": {
+     "mean": -0.11110416650772095,
+     "iqm": -0.11215277761220932
+    },
+    "svo": {
+     "mean": -0.11212500035762787,
+     "iqm": -0.11453704039255778
+    }
+   },
+   "conditionality_sig_pairs": [],
+   "persistence_dstock": {
+    "ippo": -0.0002746577840298414,
+    "ia": -0.0036747575737535953,
+    "punish": -4.433928988873958e-05,
+    "svo": 0.0009238015860319138
+   },
+   "persistence_sig_vs_ippo": []
+  },
+  "verdict": "supported"
+ }
+}
